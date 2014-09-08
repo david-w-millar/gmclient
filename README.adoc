@@ -3,6 +3,8 @@
 
 ## Overview
 
+image:https://travis-ci.org/david-w-millar/gmclient.svg[Build Status]
+
 Guerrilla Mail Json API Client, written in groovy. Should work on any JVM platform.
 
 ## Usage
