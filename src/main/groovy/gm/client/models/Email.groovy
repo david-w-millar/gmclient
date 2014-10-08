@@ -1,7 +1,6 @@
 package gm.client.models
 
 import groovy.transform.ToString
-import groovy.transform.Immutable
 
 @ToString(includeNames = true)
 class Email {

@@ -48,7 +48,7 @@ ruleset {
     ThrowExceptionFromFinallyBlock
 
     // rulesets/braces.xml
-    ElseBlockBraces
+    //ElseBlockBraces
     ForStatementBraces
     //IfStatementBraces
     WhileStatementBraces
@@ -116,7 +116,7 @@ ruleset {
     DuplicateListLiteral   { doNotApplyToFilesMatching = spec_pattern }
     DuplicateMapLiteral    { doNotApplyToFilesMatching = spec_pattern }
     DuplicateNumberLiteral { doNotApplyToFilesMatching = spec_pattern }
-    DuplicateStringLiteral { doNotApplyToFilesMatching = spec_pattern }
+    //DuplicateStringLiteral { doNotApplyToFilesMatching = spec_pattern }
 
     // rulesets/enhanced.xml
     CloneWithoutCloneable
@@ -150,7 +150,7 @@ ruleset {
     BracesForIfElse
     BracesForMethod
     BracesForTryCatchFinally
-    ClassJavadoc
+    //ClassJavadoc
     ClosureStatementOnOpeningLineOfMultipleLineClosure
     LineLength { doNotApplyToFilesMatching = spec_pattern }
     SpaceAfterCatch
@@ -288,7 +288,7 @@ ruleset {
     ObjectOverrideMisspelledMethodName
     PackageName
     ParameterName
-    PropertyName
+    //PropertyName
     VariableName { finalRegex = /[A-Za-z][A-Za-z0-9_]*/ }
 
     // rulesets/security.xml

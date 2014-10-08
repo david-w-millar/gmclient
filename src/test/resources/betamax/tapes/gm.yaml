@@ -1,0 +1,194 @@
+!tape
+name: gm
+interactions:
+- recorded: 2014-09-23T22:51:31.136Z
+  request:
+    method: GET
+    uri: http://guerrillamail.com/ajax.php?f=get_email_address&ip=127.0.0.1&agent=Mozilla
+    headers:
+      Accept: application/json, application/javascript, text/javascript
+      Host: guerrillamail.com
+      Proxy-Connection: Keep-Alive
+  response:
+    status: 200
+    headers:
+      Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type: application/json
+      Date: Tue, 23 Sep 2014 22:50:43 GMT
+      Expires: Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma: no-cache
+      Server: nginx
+      Set-Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061; path=/, SUBSCR=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.guerrillamail.com
+      X-Content-Type-Options: ': nosniff'
+      X-Powered-By: PHP/5.5.11
+    body: '{"email_addr":"snwooejf@guerrillamailblock.com","email_timestamp":1411512643,"alias":"robjg+3ghohbf9cxa0c","sid_token":"m5q499k6lfqc514qrt5nfel061"}'
+- recorded: 2014-09-23T22:51:31.939Z
+  request:
+    method: POST
+    uri: http://guerrillamail.com/ajax.php?f=set_email_user&domain=guerrillamail.com&email_user=mytester&lang=en&_=m5q499k6lfqc514qrt5nfel061
+    headers:
+      Accept: application/json, application/javascript, text/javascript
+      Content-Length: '0'
+      Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061
+      Cookie2: $Version=1
+      Host: guerrillamail.com
+      Proxy-Connection: Keep-Alive
+  response:
+    status: 200
+    headers:
+      Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type: application/json
+      Date: Tue, 23 Sep 2014 22:50:44 GMT
+      Expires: Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma: no-cache
+      Server: nginx
+      Set-Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061; path=/, SUBSCR=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.guerrillamail.com
+      X-Content-Type-Options: ': nosniff'
+      X-Powered-By: PHP/5.5.11
+    body: '{"alias_error":"","alias":"ro73b+eq9atvqulo0q8","email_addr":"mytester@guerrillamailblock.com","email_timestamp":1411512644,"site_id":1,"sid_token":"m5q499k6lfqc514qrt5nfel061","auth":{"success":true,"error_codes":[]}}'
+- recorded: 2014-09-23T22:51:32.578Z
+  request:
+    method: GET
+    uri: http://guerrillamail.com/ajax.php?f=get_email_list&offset=0&domain=guerrillamail.com&_=m5q499k6lfqc514qrt5nfel061
+    headers:
+      Accept: application/json, application/javascript, text/javascript
+      Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061
+      Cookie2: $Version=1
+      Host: guerrillamail.com
+      Proxy-Connection: Keep-Alive
+  response:
+    status: 200
+    headers:
+      Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type: application/json
+      Date: Tue, 23 Sep 2014 22:50:44 GMT
+      Expires: Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma: no-cache
+      Server: nginx
+      Set-Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061; path=/
+      X-Content-Type-Options: ': nosniff'
+      X-Powered-By: PHP/5.5.11
+    body: '{"list":[{"mail_from":"no-reply@guerrillamail.com","mail_timestamp":0,"mail_read":0,"mail_date":"22:50:43","reply_to":"","mail_subject":"Welcome to Guerrilla Mail","mail_excerpt":"Dear Random User,\r\n\r\nThank you for using Guerrilla Mail - your
+      temporary email address friend and spam fighter''s ally!\r\n\r\nYour disposable email address has been created ready for use.\r\n\r\nEmail: mytest","mail_id":1,"att":0,"content_type":"text","mail_recipient":"mytester","source_id":0,"source_mail_id":0}],"count":"0","email":"mytester@guerrillamailblock.com","alias":"djev9gq+f2m9bw","ts":1411512644,"sid_token":"m5q499k6lfqc514qrt5nfel061","stats":{"sequence_mail":"12,338,814","created_addresses":38163242,"received_emails":"1,767,532,983","total":"1,755,194,169","total_per_hour":"70293"},"auth":{"success":true,"error_codes":[]}}'
+- recorded: 2014-09-23T22:51:32.649Z
+  request:
+    method: GET
+    uri: http://guerrillamail.com/ajax.php?f=fetch_email&email_id=mr_1&domain=guerrillamail.com&_=m5q499k6lfqc514qrt5nfel061
+    headers:
+      Accept: application/json, application/javascript, text/javascript
+      Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061
+      Cookie2: $Version=1
+      Host: guerrillamail.com
+      Proxy-Connection: Keep-Alive
+  response:
+    status: 200
+    headers:
+      Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type: application/json
+      Date: Tue, 23 Sep 2014 22:50:45 GMT
+      Expires: Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma: no-cache
+      Server: nginx
+      Set-Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061; path=/
+      X-Content-Type-Options: ': nosniff'
+      X-Powered-By: PHP/5.5.11
+    body: '{"mail_from":"no-reply@guerrillamail.com","mail_timestamp":0,"mail_read":0,"mail_date":"22:50:43","reply_to":"","mail_subject":"Welcome to Guerrilla Mail","mail_excerpt":"Dear Random User,\r\n\r\nThank you for using Guerrilla Mail - your temporary
+      email address friend and spam fighter&#039;s ally!\r\n\r\nYour disposable email address has been created ready for use.\r\n\r\nEmail: mytest","mail_id":1,"att":0,"content_type":"text","mail_recipient":"mytester","source_id":0,"source_mail_id":0,"mail_body":"<pre>Dear
+      Random User,\r\n\r\nThank you for using Guerrilla Mail - your temporary email address friend\nand spam fighter''s ally!\r\n\r\nYour disposable email address has been created ready for use.\r\n\r\nEmail: mytester@sharklasers.com\r\n\r\nTips &amp; Notes:\r\n\r\n-
+      You can change this email address! Place your mouse over the Inbox ID at\nthe top of this page and click to edit.\r\n\r\n- Once you change to a new address, the old address will remain available,\nsimply change back to it. (Note: email is kept for 1 hour)\r\n\r\n-
+      Waiting for your mail? There is no need to refresh the page, new emails\nwill be added to the list as they come in.\r\n\r\n- All Emails are deleted after 1 hour.\r\n\r\nClick on the back the \"&laquo; Back to inbox\" to go back to the mail list\r\n\r\nThanks,\r\n\r\nGuerrilla
+      Mail Team\r\n<a href=\"http:\/\/www.guerrillamail.com\/\">http:\/\/www.guerrillamail.com\/<\/a>\r\n\r\n\"Free to download, but you have to give your email address so they can\ninevitably attempt to sell you stuff in the future? guerrillamail.com\nFTW!\"\r\n\r\nConnect
+      with us:\r\n<a href=\"https:\/\/www.facebook.com\/GuerrillaMail\">https:\/\/www.facebook.com\/GuerrillaMail<\/a>\r\n<a href=\"https:\/\/twitter.com\/GuerrillaMail\">https:\/\/twitter.com\/GuerrillaMail<\/a><\/pre>","ref_mid":"1:d299d61d21590f1c1131082818d1b08de49363de","sid_token":"m5q499k6lfqc514qrt5nfel061","auth":{"success":true,"error_codes":[]}}'
+- recorded: 2014-09-23T22:51:33.274Z
+  request:
+    method: GET
+    uri: http://guerrillamail.com/ajax.php?f=check_email&seq=1&domain=guerrillamail.com&_=m5q499k6lfqc514qrt5nfel061
+    headers:
+      Accept: application/json, application/javascript, text/javascript
+      Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061
+      Cookie2: $Version=1
+      Host: guerrillamail.com
+      Proxy-Connection: Keep-Alive
+  response:
+    status: 200
+    headers:
+      Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type: application/json
+      Date: Tue, 23 Sep 2014 22:50:45 GMT
+      Expires: Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma: no-cache
+      Server: nginx
+      Set-Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061; path=/
+      X-Content-Type-Options: ': nosniff'
+      X-Powered-By: PHP/5.5.11
+    body: '{"list":[],"count":"0","email":"mytester@guerrillamailblock.com","alias":"djev9gq+f2m9bw","ts":1411512644,"sid_token":"m5q499k6lfqc514qrt5nfel061","stats":{"sequence_mail":"12,338,814","created_addresses":38163242,"received_emails":"1,767,532,983","total":"1,755,194,169","total_per_hour":"70293"},"auth":{"success":true,"error_codes":[]}}'
+- recorded: 2014-09-23T22:51:33.914Z
+  request:
+    method: POST
+    uri: http://guerrillamail.com/ajax.php?f=forget_me
+    headers:
+      Accept: application/json, application/javascript, text/javascript
+      Content-Length: '0'
+      Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061
+      Cookie2: $Version=1
+      Host: guerrillamail.com
+      Proxy-Connection: Keep-Alive
+  response:
+    status: 200
+    headers:
+      Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type: application/json
+      Date: Tue, 23 Sep 2014 22:50:46 GMT
+      Expires: Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma: no-cache
+      Server: nginx
+      Set-Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061; path=/, SUBSCR=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; domain=.guerrillamail.com
+      X-Content-Type-Options: ': nosniff'
+      X-Powered-By: PHP/5.5.11
+    body: 'true'
+- recorded: 2014-10-08T21:33:30.570Z
+  request:
+    method: GET
+    uri: http://guerrillamail.com/ajax.php?f=get_email_list&offset=0&domain=&_=m5q499k6lfqc514qrt5nfel061
+    headers:
+      Accept: application/json, application/javascript, text/javascript
+      Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061
+      Cookie2: $Version=1
+      Host: guerrillamail.com
+      Proxy-Connection: Keep-Alive
+  response:
+    status: 200
+    headers:
+      Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type: application/json
+      Date: Wed, 08 Oct 2014 21:32:59 GMT
+      Expires: Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma: no-cache
+      Server: nginx
+      Set-Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061; path=/
+      X-Content-Type-Options: ': nosniff'
+      X-Powered-By: PHP/5.5.17
+    body: '{"stats":{"sequence_mail":"12,792,563","created_addresses":38163242,"received_emails":"1,792,620,028","total":"1,779,827,465","total_per_hour":"66716"},"auth":{"success":true,"error_codes":[]}}'
+- recorded: 2014-10-08T21:33:31.466Z
+  request:
+    method: GET
+    uri: http://guerrillamail.com/ajax.php?f=check_email&seq=1&domain=&_=
+    headers:
+      Accept: application/json, application/javascript, text/javascript
+      Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061
+      Cookie2: $Version=1
+      Host: guerrillamail.com
+      Proxy-Connection: Keep-Alive
+  response:
+    status: 200
+    headers:
+      Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type: application/json
+      Date: Wed, 08 Oct 2014 21:33:00 GMT
+      Expires: Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma: no-cache
+      Server: nginx
+      Set-Cookie: PHPSESSID=m5q499k6lfqc514qrt5nfel061; path=/
+      X-Content-Type-Options: ': nosniff'
+      X-Powered-By: PHP/5.5.17
+    body: '{"error":"Please call get_email_address or set_email_user first","stats":{"sequence_mail":"12,792,563","created_addresses":38163242,"received_emails":"1,792,620,028","total":"1,779,827,465","total_per_hour":"66716"},"auth":{"success":true,"error_codes":[]}}'

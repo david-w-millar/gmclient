@@ -1,7 +1,6 @@
 package gm.client.models
 
 import groovy.transform.ToString
-import groovy.transform.Immutable
 
 @ToString(includeNames = true)
 class GetEmailAddressResponse {
@@ -11,7 +10,7 @@ class GetEmailAddressResponse {
   final String sid_token
 
   String getEmailName() {
-    if( email_addr?.contains('@') )
+    if ( email_addr?.contains('@') )
       email_addr.split('@')[0]
     else
       ''

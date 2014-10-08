@@ -3,6 +3,7 @@ package gm.client.config
 /**
  * GuerrillaMail supports these domains
  */
+@SuppressWarnings('SerializableClassMustDefineSerialVersionUID')
 enum GmDomain {
 
   guerrillamail_com('guerrillamail.com'),
@@ -15,9 +16,9 @@ enum GmDomain {
   grr_la('grr.la'),
   guerrillamail_de('guerrillamail.de')
 
-  private String name
+  private final String name
 
-  GmDomain(String domainName) {
+  GmDomain(final String domainName) {
     name = domainName
   }
 
