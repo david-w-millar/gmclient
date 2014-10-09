@@ -59,6 +59,7 @@ class GMClient {
   }
 
   private void initRestClient() {
+    // Hackish, but this makes http-builder respect the default proxy
     BetamaxRoutePlanner.configure(client.client)
     client.ignoreSSLIssues()
   }

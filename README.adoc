@@ -11,8 +11,6 @@ Guerrilla Mail Json API Client, written in groovy. Should work on any JVM platfo
 
 Check out https://github.com/david-w-millar/gmclient/blob/master/src/test/groovy/gm/client/ClientSpec.groovy[this projects specs] for usage info.
 
-If that doesn't do it for you, let me know, and I would be glad to post examples here.
-
 ## Contributing
 
 Contributions are always more than welcome!

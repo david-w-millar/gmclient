@@ -61,8 +61,4 @@ codenarc {
   maxPriority3Violations = 10
 }
 
-//jacocoTestReport {
-  //reports { html.enabled true }
-//}
-
 
