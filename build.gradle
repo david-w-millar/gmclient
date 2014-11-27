@@ -7,7 +7,7 @@ apply plugin: 'signing'
 apply plugin: 'maven'
 apply plugin: 'jacoco'
 
-version       = '0.1.0'
+version       = '0.1.1'
 description   = 'Client for GuerrillaMail Json API'
 
 sourceCompatibility = 1.7
@@ -16,10 +16,15 @@ targetCompatibility = 1.7
 defaultTasks 'check', 'jacocoTestReport'
 
 ext {
-  groovyVersion   = '2.3.4'
-  spockVersion    = '0.7-groovy-2.0'
-  codenarcVersion = '0.21'
-  jacksonVersion  = '2.4.1'
+  groovyVersion      = '2.3.4'
+  spockVersion       = '0.7-groovy-2.0'
+  codenarcVersion    = '0.21'
+  jacksonVersion     = '2.4.1'
+  asciidocletVersion = 1.5.1
+}
+
+configurations {
+  asciidoclet
 }
 
 repositories {
@@ -32,10 +37,10 @@ dependencies {
   compile "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
   compile "com.fasterxml.jackson.core:jackson-core:${jacksonVersion}"
   compile "com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}"
-
   compile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1:'
 
-  // Testing
+  asciidoclet "org.asciidoctor:asciidoclet:${asciidocletVersion}"
+
   testCompile "org.spockframework:spock-core:${spockVersion}"
   compile 'co.freeside:betamax:1.2-SNAPSHOT'
 }
@@ -61,4 +66,9 @@ codenarc {
   maxPriority3Violations = 10
 }
 
+
+javadoc {
+  options.docletpath = configurations.asciidoclet.files.asType(List)
+  options.doclet = 'org.asciidoctor.Asciidoclet'
+}
 
