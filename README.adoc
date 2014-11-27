@@ -1,5 +1,6 @@
 # GuerrillaMail Json API Client (gm_client)
 :Author: David W Millar <david.w.millar@gmail.com>
+:toc:
 
 ## Overview
 
@@ -11,15 +12,10 @@ Guerrilla Mail Json API Client, written in groovy. Should work on any JVM platfo
 
 Check out https://github.com/david-w-millar/gmclient/blob/master/src/test/groovy/gm/client/ClientSpec.groovy[this projects specs] for usage info.
 
-## Contributing
-
-Contributions are always more than welcome!
-Please do not hesitate to raise issues for improvements or new features.
-
 ## License
 
 gmclient is licensed under the terms of the http://www.apache.org/licenses/LICENSE-2.0.html[Apache License, Version 2.0].
 I'm easy.
 
-
+// vim: set syntax=asciidoc:
 
